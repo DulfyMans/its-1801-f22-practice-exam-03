@@ -37,5 +37,17 @@ def blueTriangle(turtleName,sideLength):
     turtleName.forward(sideLength)
     turtleName.left(120)
 
-redSquare(casper, 50)
-blueTriangle(casper, 30)
+# redSquare(casper, 50)
+# blueTriangle(casper, 30)
+
+# Let's ask the user what they want to draw
+choice = input("What do you want to draw (0) redSquare, (1) blueTriangle: ")
+
+if choice == "0":
+  print("You just typed " + choice)
+  redSquare(casper, 50)
+elif choice == "1":
+  print("You just typed " + choice)
+  blueTriangle(casper, 30)
+else:
+  print("Unknown choice :( !!!")
